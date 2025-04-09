@@ -3,27 +3,17 @@
 
     const ExperienceData = [
         {
-            company: "Y Company",
-            position: "Full Stack Developer",
+            company: "Edunet Foundation",
+            position: "Front End Developer",
             startDate: "January 2025",
-            endDate: "Present",
+            endDate: "March 2025",
             description: [
-            "Developed and shipped highly interactive web applications for Apple Music.",
-            "Write modern, performant, maintainable code for a diverse array of client and internal projects",
-            "Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis",
+            "Built a ReactJS and TailwindCSS-based portfolio generator for easy, code-free portfolio creation.",
+            "Designed a structured input form to collect personal details, education, work experience, skills, and achievements.",
+            "Integrated Firebase authentication, storage, and hosting for secure user data and unique portfolio links.",
             ],
         },
-        {
-            company: "X Company",
-            position: "Frontend Developer",
-            startDate: "December 2024",
-            endDate: "January 2025",
-            description: [
-            "Developed and shipped highly interactive web applications for Apple Music.",
-            "Write modern, performant, maintainable code for a diverse array of client and internal projects",
-            "Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis",
-            ],
-        },
+        
     ]
 
     const Experience = () => {

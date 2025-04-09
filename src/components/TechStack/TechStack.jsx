@@ -29,14 +29,14 @@ const skills = [
         category: "Backend"
     },
     { 
-        name: "PHP", 
+        name: "Tailwind CSS", 
         color: "from-blue-500 to-blue-600",
-        category: "Backend"
+        category: "Frontend"
     },
     { 
-        name: "Python", 
+        name: "Figma", 
         color: "from-yellow-500 to-yellow-600",
-        category: "Backend"
+        category: "Tools"
     },
     { 
         name: "Git", 

@@ -3,26 +3,33 @@ import Image1 from './Image1.jpg';
 
 const projects = [
     {
-    title: "E-commerce Platform",
-    description: "A full-stack e-commerce platform built with React, Node.js, and Stripe integration.",
+    title: "GlobalGrad",
+    description: "A Software Developer Portfolio designed to showcase your skills, projects, achievements, and education, helping you highlight your expertise effectively.",
     image: Image1,
-    link: "https://github.com",
-    tags: ["React", "Node.js", "Stripe"],
+    link: "https://github.com/SmitSolanki-303/GlobalGrad.git",
+    tags: ["React", "Tailwind CSS", "Firebase"],
     },
     {
-    title: "Task Management App",
-    description: "A real-time task management application with team collaboration features.",
+    title: "Portfolio",
+    description: "Modern Portfolio for developer that showcase the skills, projects, educations, and achievements.",
     image: Image1,
-    link: "https://github.com",
-    tags: ["React", "Node.js", "Socket.io"],
+    link: "https://github.com/SmitSolanki-303/Portfolio-V2.git",
+    tags: ["React", "Tailwind CSS", "Framer Motion"],
     },
     {
-    title: "AI Chat Interface",
-    description: "An AI-powered chat interface with natural language processing capabilities.",
+    title: "BoothBiz",
+    description: "BoothBiz is a web platform designed to help stall owners and vendors efficiently manage their stalls, streamline sales with an integrated POS system, and gain valuable business insights through advanced sales analytics.",
     image: Image1,
-    link: "https://github.com",
-    tags: ["OpenAI", "React", "TailwindCSS"],
+    link: "https://github.com/SmitSolanki-303/Booth-Bizz.git",
+    tags: ["React", "TailwindCSS", "Firebase"],
     },
+    {
+        title: "INDRA Forecast",
+        description: "A weather application that provides real-time weather updates, including temperature, humidity, wind speed, UV index, visibility, and cloud conditions, by simply entering a city name.",
+        image: Image1,
+        link: "https://github.com/SmitSolanki-303/Indra-Forecast.git",
+        tags: ["React", "CSS", "API"],
+        },
 ]
 
 

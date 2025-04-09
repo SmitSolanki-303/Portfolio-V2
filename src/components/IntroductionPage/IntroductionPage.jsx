@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroImage from './mockup.png'
+import HeroImage from './mockup1.jpg'
 
 const socialLinks = [
     {
@@ -19,10 +19,10 @@ const socialLinks = [
 const IntroductionPage = () => {
 
     const onButtonClick = () => {
-        const pdfUrl = "src/components/IntroductionPage/SmitResume.pdf";
+        const pdfUrl = "src/components/IntroductionPage/Smit_WebDeveloper.pdf";
         const link = document.createElement("a");
         link.href = pdfUrl;
-        link.download = "SmitResume.pdf";
+        link.download = "Smit_WebDeveloper.pdf";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -37,8 +37,8 @@ const IntroductionPage = () => {
                     </h1>
                     
                     <p className="text-lg sm:text-xl md:text-2xl mb-12 text-gray-600">
-                        A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications 
-                        with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks.
+                        A passionate Full Stack Software Developer 🚀 having an experience of building Web applications 
+                        with JavaScript / Reactjs / Nodejs / Framer Motion and some other cool libraries and frameworks.
                     </p>
 
                     <div className="flex gap-8 mb-12">
@@ -76,7 +76,7 @@ const IntroductionPage = () => {
                     <img
                         src={HeroImage}
                         alt="Hero illustration"
-                        className="w-full h-auto object-cover rounded-2xl shadow-xl"
+                        className="w-full h-96 object-cover rounded-2xl shadow-xl"
                     />
                 </div>
             </div>

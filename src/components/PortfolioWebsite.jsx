@@ -53,7 +53,7 @@ const PortfolioWebsite = () => {
             <Projects/>
             <Education/>
             <Experience/>
-            <Achievements/>
+            {/* <Achievements/> */}
             <Contact/>
         </main>
         <Footer/>

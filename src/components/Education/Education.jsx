@@ -3,24 +3,20 @@ import EducationCard from "./EducationCard"
 const educationQualifications = [
     {
         universityName: "Sarvajanik University",
-        courseName: "Bachelor's of Technology",
+        courseName: "Bachelor's of Technology in Computer Engineering",
         courseStart: "August 2022",
         courseEnd: "June 2025",
         achievements: [
-        "Ranked 1st in Academics.",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            
         ],
     },
     {
         universityName: "Gujarat Technological University",
-        courseName: "Diploma in Engineering",
+        courseName: "Diploma in Computer Engineering",
         courseStart: "August 2019",
         courseEnd: "June 2022",
         achievements: [
-        "Ranked 1st in Academics.",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            
         ],
     },
     {
@@ -29,9 +25,7 @@ const educationQualifications = [
         courseStart: "August 2018",
         courseEnd: "june 2019",
         achievements: [
-        "Ranked 1st in Academics.",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            
         ],
     },
 ]
