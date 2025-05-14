@@ -1,71 +1,59 @@
-import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 const Header = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
 
     const scrollToSection = (sectionId) => {
         const element = document.getElementById(sectionId);
-        if(element) {
-            element.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth", block: "start" });
+            setMenuOpen(false);
         }
     };
 
     return (
-        <header className="px-4 sm:px-6 py-4 sm:py-6 sticky top-0 left-0 z-50 w-full bg-white flex justify-between">
-            <div className="text-xl sm:text-2xl">
-                <button
-                    onClick={() => scrollToSection('introduction')}
-                >
-                    <span className="font-sans font-bold text-4xl text-purple-600">Smit Solanki</span>
+        <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-md px-4 sm:px-6 py-4 flex justify-between items-center">
+            <div className="text-xl sm:text-2xl font-bold text-purple-600 cursor-pointer">
+                <button onClick={() => scrollToSection("introduction")}>
+                    Smit Solanki
                 </button>
             </div>
 
-            <div className="flex space-x-10 items-center text-xl sm:text-2xl font-montserrat">
-
-                <button
-                    onClick={() => scrollToSection('skills')}
-                    className="hover:text-purple-600 transition-colors"
-                >
-                    Skills
+            <div className="sm:hidden">
+                <button onClick={() => setMenuOpen(!menuOpen)}>
+                    {menuOpen ? <X size={28} /> : <Menu size={28} />}
                 </button>
+            </div>
 
-                <button
-                    onClick={() => scrollToSection('education')}
-                    className="hover:text-purple-600 transition-colors"
-                >
-                    Education
-                </button>
+            <nav className="hidden sm:flex space-x-6 text-base sm:text-lg font-montserrat">
+                {["skills", "education", "experience", "achievements", "contact"].map((section) => (
+                    <button
+                        key={section}
+                        onClick={() => scrollToSection(section)}
+                        className="hover:text-purple-600 transition-colors"
+                    >
+                        {section.charAt(0).toUpperCase() + section.slice(1).replace('-', ' ')}
+                    </button>
+                ))}
+            </nav>
 
-                <button
-                    onClick={() => scrollToSection('experience')}
-                    className="hover:text-purple-600 transition-colors"
-                >
-                    Work Experience
-                </button>
-
-                <button
-                    onClick={() => scrollToSection('achievements')}
-                    className="hover:text-purple-600 transition-colors"
-                >
-                    Achievements
-                </button>
-
-                <button
-                    onClick={() => scrollToSection('contact')}
-                    className="hover:text-purple-600 transition-colors"
-                >
-                    Contact Me
-                </button>
-
-                <div className="">
-                    <ToggleSwitch/>
+            {/* Mobile Menu */}
+            {menuOpen && (
+                <div className="absolute top-full left-0 w-full bg-white flex flex-col items-center space-y-4 py-4 shadow-md sm:hidden">
+                    {["skills", "education", "experience", "achievements", "contact"].map((section) => (
+                        <button
+                            key={section}
+                            onClick={() => scrollToSection(section)}
+                            className="text-lg hover:text-purple-600 transition-colors"
+                        >
+                            {section.charAt(0).toUpperCase() + section.slice(1).replace('-', ' ')}
+                        </button>
+                    ))}
                 </div>
-            </div>
+            )}
         </header>
-    )
-}
+    );
+};
 
-export default Header
-
+export default Header;
