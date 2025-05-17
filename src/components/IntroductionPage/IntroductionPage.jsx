@@ -11,7 +11,7 @@ const socialLinks = [
     },
     {
         name: "LinkedIn",
-        url: "www.linkedin.com/in/smit-solanki-b40741218",
+        url: "https://www.linkedin.com/in/smit-solanki-b40741218/",
         icon: (
             <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 3a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/>
         )
